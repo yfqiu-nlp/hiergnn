@@ -9,7 +9,64 @@ You can download our used data from [here]().
 
 The command for training is:
 
+    sh train_hier.sh
 
+## Valid/Test
+
+The commands for inference is:
+
+    sh test_hier.sh
+
+## Evaluation
+
+For evaluation, we use the ROUGE implementation from [Google-research](https://github.com/google-research/google-research/tree/master/rouge).
+
+## Released Checkpoints and Outputs
+
+<table>
+   <tr>
+      <td></td>
+      <td></td>
+      <td>Checkpoints</td>
+      <td>Outputs</td>
+   </tr>
+   <tr>
+      <td>CNN/DailyMail</td>
+      <td>BART</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>HierGNN-BART</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>XSum</td>
+      <td>BART</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>HierGNN-BART</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>PubMed</td>
+      <td>BART</td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td>HierGNN-BART</td>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
 
 ## Citation
     @inproceedings{qiu2022hiergnn,
