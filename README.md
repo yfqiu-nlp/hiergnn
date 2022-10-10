@@ -29,7 +29,6 @@ For evaluation, we use the ROUGE implementation from [Google-research](https://g
    <tr>
       <td></td>
       <td></td>
-      <td></td>
       <td>ROUGE-1</td>
       <td>ROUGE-2</td>
       <td>ROUGE-L</td>
