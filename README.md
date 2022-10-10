@@ -29,6 +29,10 @@ For evaluation, we use the ROUGE implementation from [Google-research](https://g
    <tr>
       <td></td>
       <td></td>
+      <td></td>
+      <td>ROUGE-1</td>
+      <td>ROUGE-2</td>
+      <td>ROUGE-L</td>
       <td>Checkpoints</td>
       <td>Outputs</td>
    </tr>
@@ -37,10 +41,16 @@ For evaluation, we use the ROUGE implementation from [Google-research](https://g
       <td>BART</td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
    </tr>
    <tr>
       <td></td>
       <td>HierGNN-BART</td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
    </tr>
@@ -49,10 +59,16 @@ For evaluation, we use the ROUGE implementation from [Google-research](https://g
       <td>BART</td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
    </tr>
    <tr>
       <td></td>
       <td>HierGNN-BART</td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
    </tr>
@@ -61,10 +77,16 @@ For evaluation, we use the ROUGE implementation from [Google-research](https://g
       <td>BART</td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
    </tr>
    <tr>
       <td></td>
       <td>HierGNN-BART</td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       <td></td>
    </tr>
