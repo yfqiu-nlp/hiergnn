@@ -1,5 +1,5 @@
 # Abstractive Summarization Guided by Latent Hierarchical Document Structure
-Code and materials for the [paper](https://yfqiu.netlify.app/publication/hiergnn/hiergnn.pdf) "Abstractive Summarization Guided by Latent Hierarchical Document Structure"
+Code and materials for the [paper](https://yfqiu.netlify.app/publication/hiergnn/hiergnn.pdf) "Abstractive Summarization Guided by Latent Hierarchical Document Structure". Part of our code is borrowed from [fairseq implementation for BART](https://github.com/facebookresearch/fairseq/tree/main/examples/bart). You can first run the baseline to get familiar with the whole pipeline.
 
 ## Data
 
@@ -19,7 +19,9 @@ The commands for inference is:
 
 ## Evaluation
 
-For evaluation, we use the ROUGE implementation from [Google-research](https://github.com/google-research/google-research/tree/master/rouge).
+For evaluation, we use the ROUGE implementation from [Google-research](https://github.com/google-research/google-research/tree/master/rouge), with the following command,
+
+    eval_hier.sh
 
 ## Released Checkpoints and Outputs
 
