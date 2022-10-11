@@ -27,3 +27,5 @@ for line in tqdm(lines):
 
     processed_sent = "<cls>".join(sents)
     f.write("%s\n" % processed_sent)
+
+
