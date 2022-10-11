@@ -1,6 +1,21 @@
 # Abstractive Summarization Guided by Latent Hierarchical Document Structure
 Code and materials for the [paper](https://yfqiu.netlify.app/publication/hiergnn/hiergnn.pdf) "Abstractive Summarization Guided by Latent Hierarchical Document Structure". Part of our code is borrowed from [fairseq implementation for BART](https://github.com/facebookresearch/fairseq/tree/main/examples/bart). You can first run the baseline to get familiar with the whole pipeline.
 
+## Basic installations
+
+You first need to install the fairseq by,
+
+    cd fairseq
+    pip install --editable ./
+
+You then need to download the official checkpoint for `bart.large` as the backbone for HierGNN-BART from [here](https://github.com/facebookresearch/fairseq/blob/main/examples/bart/README.md),
+
+    wget https://dl.fbaipublicfiles.com/fairseq/models/bart.large.tar.gz
+    tar -xzvf bart.large.tar.gz
+    rm bart.large.tar.gz
+
+Please make sure you are using `PyTorch==1.7`.
+
 ## Data
 
 ### Use our data
