@@ -90,10 +90,18 @@ class MultiprocessingEncoder(object):
 
     def __init__(self, args):
         self.args = args
+        self.name = args.inputs[0]
+        self.is_hie = "source" in self.name
+        print(self.is_hie, self.name)
 
     def initializer(self):
         global bpe
         bpe = get_encoder(self.args.encoder_json, self.args.vocab_bpe)
+    
+    def hie_encode(self, line):
+        global bpe
+        ids = bpe.hie_encode(line)
+        return list(map(str, ids))
 
     def encode(self, line):
         global bpe
@@ -113,7 +121,10 @@ class MultiprocessingEncoder(object):
             line = line.strip()
             if len(line) == 0 and not self.args.keep_empty:
                 return ["EMPTY", None]
-            tokens = self.encode(line)
+            if self.is_hie:
+                tokens = self.hie_encode(line)
+            else:
+                tokens = self.encode(line)
             enc_lines.append(" ".join(tokens))
         return ["PASS", enc_lines]
 

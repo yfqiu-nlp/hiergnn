@@ -25,7 +25,7 @@ for line in tqdm(lines):
     sents = [sents[i][:max_src_ntokens] for i in idxs]
     sents = sents[:max_nsents]
 
-    processed_sent = "<cls>".join(sents)
+    processed_sent = " ".join(["%s%s" % ("<cls>", sent) for sent in sents])
     f.write("%s\n" % processed_sent)
 
 
