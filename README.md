@@ -25,11 +25,11 @@ You can download our used data from [here](https://drive.google.com/drive/folder
 
 Alternatively, you can first download the original data (without splitting source article  into sentences) from [here](https://github.com/icml-2020-nlp/semsim). We then use the `sent_tokenize` from [nltk](https://www.nltk.org/api/nltk.tokenize.html) to split the source article into sentences, and add `<cls>` between sentences, with the following command, 
 
-    python3 ssplt.py <input-source-file> <output-processed-file>
+    python3 ssplit.py <input-source-file> <output-processed-file>
 
 For example,
 
-    python3 ssplt.py cnndm-raw/train.source cnndm-ssplit/train.source
+    python3 ssplit.py cnndm-raw/train.source cnndm-ssplit/train.source
 
 Then you can BPE all texts using `hie_bpe.sh` from `cnndm-ssplit`,
 
