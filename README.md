@@ -51,7 +51,7 @@ Then you can BPE all texts using `hie_bpe.sh` from `cnndm-ssplit`,
       done
 
 
-then binarize the dataset with `hie_bin.sh`,
+then binarize the dataset with `hie_bin.sh` and finally have have the binarized data `cnndm-ssplit-bin`,
 
       TASK=cnndm-ssplit
       DICT=checkpoints/dict.source.txt
